@@ -1,10 +1,10 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *Crowdfunding Best of ALL*
 
 Submitted by: **Nazrin Mammadsoy**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Crowdfunding Best of ALL** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **12** hours spent in total
+Time spent: **15** hours spent in total
 
 ## Required Features
 
@@ -39,7 +39,9 @@ GIF created with LiceCap
 
 Describe any challenges encountered while building the app.
 
-I would say adding the topfunded and secondmostfunded games was challenging for me, I got cofnused a bit with what goes where. 
+In the beginning, setting up github and having to get my visual studio run json file was difficult. I had to troubleshoot it a lot and download node.js and then create a path in environment variables to get it to work. 
+
+Also adding the topfunded and secondmostfunded games was challenging for me, I got confused a bit with what goes where. I couldn't implement "Backers" to be honest as shown in the last screenshot in Submission PDF. 
 
 ## License
 
