@@ -47,11 +47,10 @@ function addGamesToPage(games) {
       <img class="game-img" src="${game.img}" alt="${game.name}" />
       <h3>${game.name}</h3>
       <p>${game.description}</p>
-      <p>Pledged: $${game.pledged}</p>
-    `;
+      <p>Pledged: $${game.pledged}</p>`;
 
         // append the game to the games-container
-        const gamesContainer = document.getElementById("games-container");
+        // const gamesContainer = document.getElementById("games-container");
         gamesContainer.appendChild(gameCard);
 
     }
@@ -152,7 +151,7 @@ const numFundedGames = GAMES_JSON.filter(game => game.pledged >= game.goal).leng
 // create a string that explains the number of unfunded games using the ternary operator
 const displayStr = `A total of $100,000 has been raised for ${numFundedGames} game${numFundedGames !== 1 ? "s" : ""}. 
 Currently, ${numUnfundedGames} game${numUnfundedGames !== 1 ? "s" : ""} remain unfunded. 
-We need your help to fund ${numUnfundedGames === 1 ? "this amazing game!" : "these amazing games!"}`;
+We need your help to fund ${numUnfundedGames === 1 ? 'game remains' : 'remaining'} unfunded games!`;
 
 // create a new DOM element containing the template string and append it to the description container
 const descriptionElement = document.createElement("p");
@@ -171,7 +170,15 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [mostFundedGame, secondMostFundedGame] = sortedGames;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const mostFundedHeading = document.createElement("h3");
+const secondFundedHeading = document.createElement("h3");
 
 // do the same for the runner up item
+mostFundedHeading.innerHTML = mostFundedGame.name;
+secondFundedHeading.innerHTML = secondMostFundedGame.name;
+
+firstGameContainer.appendChild(mostFundedHeading);
+secondGameContainer.appendChild(secondFundedHeading);
