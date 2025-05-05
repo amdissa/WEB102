@@ -26,9 +26,11 @@ The following **optional** features are implemented:
 Here's a walkthrough of implemented features:
 
 <img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Walkthrough demo](web102_prework/walkthrough_seaworthy.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LiceCap
+
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -38,7 +40,7 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
-
+I would say adding the topfunded and secondmostfunded games was challenging for me, I got cofnused a bit with what goes where. 
 
 ## License
 
